@@ -189,15 +189,15 @@ end)
     elseif ping > 220 then
         getgenv().PredictionValue = 0.2
     elseif ping > 210 then
-        getgenv().PredictionValue = 0.19834398934
+        getgenv().PredictionValue = 0.155223312
     elseif ping > 200 then
-        getgenv().PredictionValue = 0.198439891120
+        getgenv().PredictionValue = 0.155223120
     elseif ping > 190 then
-        getgenv().PredictionValue = 0.194924892910
+        getgenv().PredictionValue = 0.155223310
     elseif ping > 180 then
-        getgenv().PredictionValue = 0.19291198328
+        getgenv().PredictionValue = 0.155223320
     elseif ping > 180 then
-        getgenv().PredictionValue = 0.19291198328
+        getgenv().PredictionValue = 0.155223328
     elseif ping > 170 then
         getgenv().PredictionValue = 0.18
     elseif ping > 160 then
@@ -221,7 +221,7 @@ end)
     elseif ping > 70 then
         getgenv().PredictionValue = 0.142
     elseif ping > 50 then
-        getgenv().PredictionValue = 0.1267
+        getgenv().PredictionValue = 0.1225
     elseif ping > 40 then
         getgenv().PredictionValue = 0.12
     elseif ping > 30 then
@@ -327,25 +327,4 @@ end)
                         AnchorCount = 0;
                     end
                 else
-                    Prediction = true
-                    AnchorCount = 0;
-                end
- 
-                SelectedPart = "HumanoidRootPart"
-            end
- 
-        else
-                SelectedPart = "HumanoidRootPart"
-        end
-    end)
-
-game:GetService("RunService").RenderStepped:connect(function()
-if getgenv().AntiGroundShots == true and Plr.Character.Humanoid.Jump == true and Plr.Character.Humanoid.FloorMaterial == Enum.Material.Air then
-    pcall(function()
-        local TargetVelv5 = Plr.Character.HumanoidRootPart
-TargetVelv5.Velocity = Vector3.new(TargetVelv5.Velocity.X, math.abs(TargetVelv5.Velocity.Y * 0.36),
- TargetVelv5.Velocity.Z)
-        TargetVelv5.AssemblyLinearVelocity = Vector3.new(TargetVelv5.Velocity.X, math.abs(TargetVelv5.Velocity.Y * 0.36), TargetVelv5.Velocity.Z)
-    end)
-    end
-end)
+                
